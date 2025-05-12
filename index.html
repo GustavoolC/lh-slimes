@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Calculadora de Slime</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3 class="denilson" onclick="denilson()">Denilson</h3>
+            <h3 class="alice" onclick="alice()">Alice</h3>
+        </nav>
+    </header>
+    <main>
+        <div id="denilson">
+            <section class="comparacao">
+                <img src="assets/Denilson.png" width="140px" id="denilsonImg">
+                <img src="assets/Figura.png" width="170px" id="figura1Img">
+            </section>
+            <section class="sistema">
+                <hgroup>
+                <span>
+                <h1>PV Máximo</h1>
+                <input id="denilsonPV" type="number" onkeydown="setTimeout(converterDenilsonPV, 10)">
+                </span>
+                <span>
+                <h1>Altura</h1>
+                <input id="denilsonAltura" type="number" onkeydown="setTimeout(converterDenilsonAltura, 10)">
+                </span>
+                </hgroup>
+                <h1 id="classificacaoDenilson"></h1>
+                <h2 id="defesaDenilson"></h2>
+                <h2 id="destrezaDenilson"></h2>
+                <h2 id="forcaDenilson"></h2>
+                <h2 id="protecaoDenilson"></h2>
+                <h2 id="armasDenilson"></h2>
+                <h2 id="socoDenilson"></h2>
+            </section>
+        </div>
+        <div id="alice" class="secreto">
+            <section class="comparacao">
+                <img src="assets/Alice.png" width="186.2px" id="aliceImg">
+                <img src="assets/Figura.png" width="170px" id="figura2Img">
+            </section>
+            <section class="sistema">
+                <hgroup>
+                <span>
+                <h1>PV Máximo</h1>
+                <input id="alicePV" type="number" onkeydown="setTimeout(converterAlicePV, 10)">
+                </span>
+                <span>
+                <h1>Altura</h1>
+                <input id="aliceAltura" type="number" onkeydown="setTimeout(converterAliceAltura, 10)">
+                </span>
+                </hgroup>
+                <h1 id="classificacaoAlice"></h1>
+                <h2 id="defesaAlice"></h2>
+                <h2 id="destrezaAlice"></h2>
+                <h2 id="forcaAlice"></h2>
+                <h2 id="protecaoAlice"></h2>
+                <h2 id="armasAlice"></h2>
+                <h2 id="socoAlice"></h2>
+            </section>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

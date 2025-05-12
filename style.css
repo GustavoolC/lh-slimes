@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(115, 115, 115), rgb(72, 72, 72));
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.secreto {
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h3 {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 23.57%;
+    padding-right: 23.57%;
+}
+
+.denilson {
+    background-image: linear-gradient(rgb(57, 185, 57), rgb(40, 135, 40));
+}
+
+.denilson:hover {
+    background-image: linear-gradient(rgb(121, 222, 121), rgb(88, 165, 88));
+    font-size: 200%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    padding-right: 22.27%;
+    padding-left: 22.27%;
+    cursor: pointer;
+}
+
+.alice {
+    background-image: linear-gradient(rgb(235, 92, 233), rgb(164, 63, 162));
+    background-color: rgb(235, 92, 233);
+}
+
+.alice:hover {
+    background-image: linear-gradient(rgb(230, 144, 229), rgb(169, 99, 168));
+    font-size: 200%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    padding-right: 22.79%;
+    padding-left: 22.79%;
+    cursor: pointer;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+.comparacao {
+    width: 25%;
+    margin-left: 5%;
+    margin-top: 8.5%;
+    gap: 2%;
+}
+
+img {
+    padding: 5px;
+}
+
+.sistema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 7%;
+}
+
+hgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    font-size: 200%;
+    background-color: black;
+    border-radius: 20px;
+    border-color: black;
+    padding: 3%;
+    width: 50%;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
+
+#classificacaoDenilson {
+    margin-top: 5%;
+}
+
+#classificacaoAlice {
+    margin-top: 5%;
+}
+
+.positivo {
+    color: rgb(0, 80, 0);
+    text-shadow: 0px 0px 20px rgb(30, 255, 0);
+}
+
+.negativo {
+    color: rgb(95, 9, 9);
+    text-shadow: 0px 0px 20px rgb(255, 0, 0);
+}
