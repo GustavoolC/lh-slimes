@@ -1,16 +1,22 @@
 let denilsonPV;
+let denilsonPVAntigo;
+let denilsonPVAtual;
 let denilsonPixel;
 let alicePV;
 let alicePixel;
 
 function denilson() {
     document.getElementById("denilson").setAttribute("class","");
+    document.getElementById("denilsonFooter").setAttribute("class","");
     document.getElementById("alice").setAttribute("class","secreto");
+    document.getElementById("aliceFooter").setAttribute("class","secreto");
 }
 
 function alice() {
     document.getElementById("alice").setAttribute("class","");
+    document.getElementById("aliceFooter").setAttribute("class","");
     document.getElementById("denilson").setAttribute("class","secreto");
+    document.getElementById("denilsonFooter").setAttribute("class","secreto");
 }
 
 function converterDenilsonPV() {
@@ -306,4 +312,22 @@ function definirPontosAlice() {
         document.getElementById("socoAlice").innerHTML = "+2d6 de Dano de Soco";
         document.getElementById("socoAlice").setAttribute("class","positivo");
     }
+}
+
+function atualizarDenilson() {
+    denilsonPVAtual = parseInt(document.getElementById("denilsonPVAtual").value);
+    denilsonPVAntigo = parseInt(document.getElementById("denilsonPVMaximo").value);
+    document.getElementById("denilsonPVAtual").value = atualizacao(denilsonPVAtual, denilsonPV, denilsonPVAntigo).toFixed(0);
+    document.getElementById("denilsonPVMaximo").value = denilsonPV;
+}
+
+function atualizarAlice() {
+    alicePVAtual = parseInt(document.getElementById("alicePVAtual").value);
+    alicePVAntigo = parseInt(document.getElementById("alicePVMaximo").value);
+    document.getElementById("alicePVAtual").value = atualizacao(alicePVAtual, alicePV, alicePVAntigo).toFixed(0);
+    document.getElementById("alicePVMaximo").value = alicePV;
+}
+
+function atualizacao(PVAtual, Pv, PVAntigo) {
+    return (PVAtual * Pv) / PVAntigo;
 }
